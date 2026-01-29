@@ -21,6 +21,8 @@ describe("Page start", () => {
   });
 
   afterEach(async () => {
+    if (browser) {
     await browser.close();
+    }
   });
 });

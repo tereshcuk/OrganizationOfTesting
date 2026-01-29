@@ -37,6 +37,8 @@ describe("Form", () => {
   }, 20000);
 
   afterEach(async () => {
+    if (browser) {
     await browser.close();
+    }
   });
 });
