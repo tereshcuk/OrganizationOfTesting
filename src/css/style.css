@@ -1,0 +1,92 @@
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center; /* Горизонтальное центрирование */
+  
+  height: 100vh; /* Высота равна высоте окна просмотра */
+  margin: 10px;
+  
+}
+
+input[type="number"] {
+  width: 200px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #c9b4b4;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+span {
+  margin-top: 10px;
+  display: block;
+}
+
+#validate-button {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    border: 1px solid transparent;
+    height: 35px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 6px 12px;
+  }
+
+.card-container {  
+  width: 510px;
+  height: 35px;  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cell {
+  width: 15%;
+  height: 100%;
+  box-sizing: border-box;
+  border: 1px solid #c9b4b4;
+  margin: 2px;   
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+    
+}  
+
+.c_0 {  
+  background-image: url("../img/0.png");     
+} 
+
+.c_1 {  
+  background-image: url("../img/1.png");     
+} 
+
+.c_2 {  
+  background-image: url("../img/2.png");     
+} 
+
+.c_3 {  
+  background-image: url("../img/3.png");     
+} 
+
+.c_4 {  
+  background-image: url("../img/4.png");     
+} 
+
+.c_5 {  
+  background-image: url("../img/5.png");     
+} 
+
+.active {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.inactive {
+  filter: grayscale(80%);
+  opacity: 0.5;
+}
